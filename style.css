@@ -1,0 +1,39 @@
+section {
+    border: 2px solid black;
+    width: 25%;
+    padding-top: 60px;
+}
+
+#first {
+    background-color: blueviolet;
+}
+
+#second {
+    background-color: aqua;
+}
+
+#third {
+    background-color: bisque;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    
+
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    
+}
+a{
+    text-decoration: none
+
+}
