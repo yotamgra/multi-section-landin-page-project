@@ -29,3 +29,23 @@
 //     document.querySelector(".third").style.backgroundColor = "red"
 // })
 
+const sections = document.querySelectorAll("section")
+console.log(sections);
+const navBar = document.querySelector('#nav-ul');
+
+for (let i = 0; i < sections.length; i++){
+    const newLi = document.createElement('li')
+    const section = sections[i]
+    newLi.textContent = section.dataset.section;
+    
+    newLi.addEventListener('click', function(){
+        console.log(section,newLi)
+        const locationSection = section.getBoundingClientRect()
+        scrollBy({
+            top: locationSection.top - 128, 
+            behavior: "smooth"
+
+        })
+    })
+    navBar.appendChild(newLi)
+}
