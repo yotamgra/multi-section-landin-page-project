@@ -17,7 +17,7 @@
    <nav>
       <ul id="nav-ul">
          <li><img src="images/logo.png" /></li>
-        
+
       </ul>
    </nav>
    <section id="main" data-section="Showcase">
@@ -167,18 +167,39 @@
       <p>Get our latest update on your inbox. With lots of unique blocks, you can easily build a page without coding.
          Build your next consultancy website within few minutes.</p>
 
-      <form action="contact.html" method="GET">
-         <div>
-            <label class="label" for="name">Name</label>
-            <input class="input" type="text" name="name" id="name" required>
+      <form action="index.html" method="GET">
+         <div class="right-sub">
+            <div>
+               <label class="label" for="name">Your First Name</label>
+               <input class="input" type="text" name="name" id="name" placeholder="Write your first name here" required>
+            </div>
+            <div>
+               <label class="label" for="surName">Your Surname</label>
+               <input class="input" type="text" name="surName" id="surName" placeholder="Write your last name here" required>
+            </div>
+            <div>
+               <label class="label" for="phon">Phone number</label>
+               <input class="input" type="tel" name="phon" id="phon" placeholder="Write your phon number here" required>
+            </div>
+            <div>
+               <label class="label" for="email">Email Address</label>
+               <input class="input" type="email" name="email" id="email" placeholder="Write your e-mail here" required>
+            </div>
          </div>
-         <div>
-            <label class="label"  for="email">e-mail</label>
-            <input class="input" type="email" name="email" id="email" required>
-         </div>
-         <div>
-            <label class="label" for="password">Password</label>
-            <input class="input" type="password" name="password" id="password" required>
+         <div class="left-sub">
+            <div>
+               <label class="label" for="subject">Subject</label>
+               <input class="input" type="text" name="subject" id="subject" placeholder="Write a subject line" required>
+            </div>
+            <div>
+               <label class="label" for="massage">Massage</label>
+               <textarea placeholder="Write a subject line"  ></textarea>
+
+               
+
+
+
+            </div>
          </div>
          <div>
             <button type="reset">Reset</button>
